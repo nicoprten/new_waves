@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprovecha nuestro hot sale en estos últimos diseños únicos que tenemos. Son limitados y no volveremos a sacarlos.">
+    <meta name="keywords" content="SHOP, ECOMMERCE, WAVES, NEW, DROPS, ROPA, HOT, SALE, OFERTA">
+    <title>Hot Sale -- WAVES</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="toggle">
+            <ion-icon name="menu-outline" class="toggle__icon"></ion-icon>
+            <ion-icon name="close-outline" class="toggle__icon"></ion-icon>
+        </div>
+        <div id='logoWave'>
+            <a href="../index.html"><img src="../imagenes/logo01.png" alt="logo Waves"></a>
+            <p>Limited Edition</p>
+        </div>
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item"><a href="web/hotsale.html" class="menu__a">HOT SALE</a></li>
+                <li class="menu__item menu__item--sub">
+                    <a href="productos.html" class="menu__a">PRODUCTOS</a>
+                    <ul class="menu__submenu">
+                        <li class="menu__submenu__item"><a class="menu__a" href=''>Abrigos</a></li>
+                        <li class="menu__submenu__item"><a class="menu__a" href=''>Remeras</a></li>
+                        <li class="menu__submenu__item"><a class="menu__a" href=''>Pantalones</a></li>
+                        <li class="menu__submenu__item"><a class="menu__a" href=''>Accesorios</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a href="carrito.html" class="menu__a">CARRITO</a></li>
+                <li class="menu__item"><a href="contacto.html" class="menu__a">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- BEM MENU MOBILE -->
+        <div class="wrapper">
+            <ul class="wrapper__lista">
+                <li class="wrapper__item wrapper__item--active">
+                    <a href="hotsale.html" class="wrapper__a"><ion-icon name="flame" class="wrapper__icon"></ion-icon><span class="wrapper__span"> HOT SALE</span></a>
+                </li>
+                <li class="wrapper__item wrapper__item--active">
+                    <a href="productos.html" class="wrapper__a"><ion-icon name="shirt" class="wrapper__icon"></ion-icon> <span class="wrapper__span">PRODUCTOS</span></a>
+                </li>
+                <li class="wrapper__item wrapper__item--active">
+                    <a href="carrito.html" class="wrapper__a"><ion-icon name="bag-handle" class="wrapper__icon"></ion-icon> <span class="wrapper__span">CARRITO</span></a>
+                </li>
+                <li class="wrapper__item wrapper__item--active">
+                    <a href="contacto.html" class="wrapper__a"><ion-icon name="mail" class="wrapper__icon"></ion-icon> <span class="wrapper__span">CONTACTO</span></a>
+                </li>
+                <li class="wrapper__item wrapper__item--active">
+                    <a href="" class="wrapper__a"><ion-icon name="share-social" class="wrapper__icon"></ion-icon> <span class="wrapper__span">COMPARTIR</span></a>
+                </li>
+            </ul>
+        </div>
+        <div id="flexContainerHotSale">
+            <div class="seccionHotSale">
+                <h1>Hot sale</h1>
+                <p>Fijate en nuestros descuentos y rebajas disponibles</p>
+            </div>
+            <section id="flexContainerDesc" class="seccionHotSale desc">
+                <div class="desc__info">
+                    <h2 class="desc__info__title">Descuentos</h2>
+                    <p class="desc__info__p">Pagando en efectivo podes aprovechar nuestros últimos descuentos antes de que se acaben.</p>
+                </div>
+                <div class="desc__container">
+                    <h3 class="desc__container__title">Gorros</h3>
+                    <a href="" class="desc__container__a"><img src="../imagenes/descGorros.jpg" alt="descuento del 30% en gorros" class="desc__container__img"></a>
+                </div>
+                <div class="desc__container">
+                    <h3 class="desc__container__title">Medias</h3>
+                    <a href="" class="desc__container__a"><img src="../imagenes/descMedias.jpg" alt="descuento del 15% en medias" class="desc__container__img"></a>
+                </div>
+                <div class="desc__container">
+                    <h3 class="desc__container__title">Remeras</h3>
+                    <a href="" class="desc__container__a"><img src="../imagenes/descRemeras.jpg" alt="descuento del 10% en remeras" class="desc__container__img"></a>
+                </div>
+            </section>
+            <section id='flexContainerRebaja' class="seccionHotSale">
+                <div>
+                    <h2 id='rebajaTitle'>Rebajas</h2>
+                    <h3>Temporada invierno</h3>
+                    <a href=''><img src="../imagenes/abrigos-hotsale.jpg" alt="varios abrigos en hot sale"></a>
+                </div>
+                <div id='rebaja'>
+                    <h3>Accesorios</h3>
+                    <p>Complementa tu atuendo con estos accesorios originales!</p>
+                    <a href=''><img src="../imagenes/accesorios.jpg" alt="accesorios Waves"></a>
+                </div>
+            </section>
+        </div>
+        <!-- APLICANDO MIXIN -->
+        <div class="seccionesInfo">
+            <section class="bloqueSeccion">
+                <h2 class="bloqueSeccion__titulo">Tabla de medidas</h2>
+                <ul class="bloqueSeccion__lista">
+                    <li class="bloqueSeccion__item">Talle S: 66cm de largo - 20cm de sisa - 46cm de ancho</li>
+                    <li class="bloqueSeccion__item">Talle M: 69cm de largo - 22cm de sisa - 50cm de ancho</li>
+                    <li class="bloqueSeccion__item">Talle L: 74cm de largo - 23cm de sisa - 53cm de ancho</li>
+                    <li class="bloqueSeccion__item">Talle XL: 78cm de largo - 26cm de sisa - 55cm de ancho</li>
+                </ul>
+            </section>
+            <section class="bloqueSeccion">
+                <h2 class="bloqueSeccion__titulo">Detalles de envío</h2>
+                <ul class="bloqueSeccion__lista">
+                    <li class="bloqueSeccion__item">CABA: utilizamos como medio el correo argentino.</li>
+                    <li class="bloqueSeccion__item">Buenos Aires: utilizamos como medio un cadete personal.</li>
+                    <li class="bloqueSeccion__item">Exterior: mandanos un mail y coordinamos.</li>
+                </ul>
+            </section>
+            <section class="bloqueSeccion">
+                <h2 class="bloqueSeccion__titulo">Trabajamos con:</h2>
+                <ul class="bloqueSeccion__lista">
+                    <li class="bloqueSeccion__item">Visa Débito.</li>
+                    <li class="bloqueSeccion__item">Mastercard.</li>
+                    <li class="bloqueSeccion__item">Transferencia directa.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div id='marca' class="footer__marcas">
+            <p class="footer__p">New Waves</p>
+            <p class="footer__p">Marca registrada 2020</p>
+            <p class="footer__p">STREETWEAR, ZAPATILLAS & SKATEBOARDING</p>
+        </div>
+        <ul class="footer__redes">
+            <li class="footer__item footer__item--active"><a href='https://www.instagram.com/limited.waves/' target='_blank' class="footer__a"><img src="../imagenes/iconInstagram.png" alt="instagram" class="footer__img"></a></li>
+            <li class="footer__item footer__item--active"><a href='' class="footer__a"><img src="../imagenes/iconWpp.png" alt="whatsapp" class="footer__img"></a></li>
+            <li class="footer__item footer__item--active"><a href='' class="footer__a"><img src="../imagenes/iconYT.png" alt="whatsapp" class="footer__img"></a></li>
+        </ul>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        let menuToggle = document.querySelector('.toggle');
+        let wrapper = document.querySelector('.wrapper');
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('toggle--active')
+            wrapper.classList.toggle('wrapper--active')
+        }
+    </script>
+</body>
+</html>
