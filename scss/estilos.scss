@@ -262,7 +262,7 @@ $blanco: rgb(233, 233, 233);
 }
 
 .bloqueSeccion{
-    @include seccion(25%, 330px, black, 1.1em, 'Bebas Neue');
+    @include seccion(25%, auto, black, 1.1em, 'Bebas Neue');
     .bloqueSeccion__titulo{
         margin: 0;
     }
