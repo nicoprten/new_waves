@@ -88,6 +88,10 @@ $blanco: rgb(233, 233, 233);
             font-size: 24px;
         }
     }
+    .data__instru:hover{
+        box-shadow: 0px 0px 8px 5px rgba(255,255,255,0.30);
+        transition: 0.3s;
+    }
 }
 /* BEM -> Información -MEDIA QUERY */
 @media only screen and (max-width: 400px){
@@ -273,6 +277,10 @@ $blanco: rgb(233, 233, 233);
             color: white;
         }
     }
+}
+.bloqueSeccion:hover{
+    box-shadow: 0px 0px 8px 5px rgba(255,255,255,0.30);
+    transition: 0.3s;
 }
 @media only screen and (max-width: 400px){
     .seccionesInfo{

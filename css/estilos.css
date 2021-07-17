@@ -67,6 +67,9 @@
       margin: 20px 0;
       font-family: 'Bebas Neue';
       font-size: 24px; }
+  .data .data__instru:hover {
+    box-shadow: 0px 0px 8px 5px rgba(255, 255, 255, 0.3);
+    transition: 0.3s; }
 
 /* BEM -> Información -MEDIA QUERY */
 @media only screen and (max-width: 400px) {
@@ -193,7 +196,7 @@
 /* APLICANDO MIXIN */
 .bloqueSeccion {
   width: 25%;
-  height: 330px;
+  height: auto;
   background-color: black;
   border: 2px solid white;
   padding: 14px;
@@ -205,6 +208,10 @@
     .bloqueSeccion .bloqueSeccion__lista .bloqueSeccion__item {
       margin: 14px 0;
       color: white; }
+
+.bloqueSeccion:hover {
+  box-shadow: 0px 0px 8px 5px rgba(255, 255, 255, 0.3);
+  transition: 0.3s; }
 
 @media only screen and (max-width: 400px) {
   .seccionesInfo {
