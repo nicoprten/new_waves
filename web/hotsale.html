@@ -7,6 +7,7 @@
     <meta name="description" content="Aprovecha nuestro hot sale en estos últimos diseños únicos que tenemos. Son limitados y no volveremos a sacarlos.">
     <meta name="keywords" content="SHOP, ECOMMERCE, WAVES, NEW, DROPS, ROPA, HOT, SALE, OFERTA">
     <title>Hot Sale -- WAVES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
@@ -39,7 +40,7 @@
     </header>
     <main>
         <!-- BEM MENU MOBILE -->
-        <div class="wrapper">
+        <div class="wrapper animate__animated animate__headShake">
             <ul class="wrapper__lista">
                 <li class="wrapper__item wrapper__item--active">
                     <a href="hotsale.html" class="wrapper__a"><ion-icon name="flame" class="wrapper__icon"></ion-icon><span class="wrapper__span"> HOT SALE</span></a>
@@ -85,12 +86,22 @@
                 <div>
                     <h2 id='rebajaTitle'>Rebajas</h2>
                     <h3>Temporada invierno</h3>
-                    <a href=''><img src="../imagenes/abrigos-hotsale.jpg" alt="varios abrigos en hot sale"></a>
+                    <a href=''>
+                        <picture>
+                            <source media="(max-width:400px)" srcset="../imagenes/abrigos-hotsale-280.jpg">
+                            <img src="../imagenes/abrigos-hotsale.jpg" alt="varios abrigos en hot sale">
+                          </picture>
+                    </a>
                 </div>
                 <div id='rebaja'>
                     <h3>Accesorios</h3>
                     <p>Complementa tu atuendo con estos accesorios originales!</p>
-                    <a href=''><img src="../imagenes/accesorios.jpg" alt="accesorios Waves"></a>
+                    <a href=''>
+                        <picture>
+                            <source media="(max-width:400px)" srcset="../imagenes/accesorios-280.jpg">
+                            <img src="../imagenes/accesorios.jpg" alt="accesorios Waves">
+                          </picture>
+                    </a>
                 </div>
             </section>
         </div>
