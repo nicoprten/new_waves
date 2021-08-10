@@ -7,5 +7,6 @@ NEW WAVES - ECOMMERCE
 5 secciones (Inicio - Hot Sale - Productos - Carrito - Contacto)
 
 CSS
-SRCSET - Aplicado en la seccion de HotSale
+SRCSET - Aplicado en hotsale.hmtl
+MIXIN - Aplicado en hotsale.scss
 

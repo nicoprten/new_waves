@@ -9,6 +9,9 @@ $gris: rgb(16, 16, 16);
 $blanco: rgb(233, 233, 233);
 
 /* RESET */
+:root{
+    font-size: 16px;
+}
 *{
     font-family: 'Noto Serif', 'Helvetica';
     color: white;
@@ -38,7 +41,7 @@ h1, h2, h3{
     color: rgb(252, 219, 0);
     margin: 20px 0;
     font-family: 'Bebas Neue';
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 a{
     text-decoration: none;
@@ -70,7 +73,7 @@ input, textarea, select, option{
             display: inline-block;
             padding: 10px 5px;
             .menu__a{
-                font: 20px 'Bebas Neue';
+                font: 1.2rem 'Bebas Neue';
             }
             .menu__a:hover{
                 color: $amarillo;
@@ -111,7 +114,7 @@ input, textarea, select, option{
             color: black;
             width: 100%;
             margin: 2px 0;
-            font: 1.2em 'Bebas Neue';
+            font: 1.2rem 'Bebas Neue';
         }
     }
     .footer__redes{
