@@ -1,0 +1,148 @@
+#introCarro p, #introHotSale p, #contacto p{
+    font: italic 12px 'Helvetica';
+}
+#flexContainerDesc{
+    display: flex;
+    flex-direction: row;
+}
+#flexContainerRebaja{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    div{
+        margin: 20px 30px;
+    }
+    img:hover, .descuento img:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+}
+#rebaja{
+    position: relative;
+    p{
+        position: absolute;
+        background-color: black;
+        padding: 10px;
+        top: 40%;
+        width: 40%;
+        z-index: 1;
+    }
+}
+#rebajaTitle{
+    display: none;
+}
+
+/* BEM -> Descuentos en HOT SALE */
+.desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__info{
+        margin: 25px;
+        border: 2px solid $amarillo;
+        padding: 20px;
+        height: 30%;
+        &__title{
+            margin: 0 0 10px 0;
+        }
+    }
+    &__container{
+        margin: 0 20px;
+    }
+}
+
+/* QUERY */
+@media only screen and (max-width: 400px){
+    #flexContainerHotSale{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .seccionHotSale{
+        width: 80%;
+    }
+    #flexContainerDesc{
+        display: flex;
+        flex-direction: column;
+    }
+    #flexContainerRebaja{
+        display: flex;
+        flex-direction: column;
+        div{
+            margin: 0;
+        }
+    }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px){
+    #flexContainerDesc{
+        display: flex;
+        flex-direction: column;
+    }
+    #flexContainerRebaja{
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 330px;
+        }
+        div{
+            margin: 0;
+        }
+    }
+}
+
+/* BEM SECCIÓN DE INFO */
+.seccionesInfo{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* APLICANDO MIXIN */
+@mixin seccion($ancho, $alto, $colorFondo, $tamañoFont, $fuente){
+    width: $ancho;
+    height: $alto;
+    background-color: $colorFondo;
+    border: 2px solid white;
+    padding: 14px;
+    font: bold $tamañoFont $fuente;
+}
+
+.bloqueSeccion{
+    @include seccion(25%, auto, black, 1.1em, 'Bebas Neue');
+    &__titulo{
+        margin: 0;
+    }
+    &__lista{
+        list-style: none;
+        .bloqueSeccion__item{
+            margin: 14px 0;
+            color: white;
+        }
+    }
+    &:hover{
+        box-shadow: 0px 0px 8px 5px rgba(255,255,255,0.30);
+        transition: 0.3s;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .seccionesInfo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bloqueSeccion{
+        @include seccion(70%, auto, black, .8em, 'Helvetica');
+        margin: 20px 0;
+    }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .seccionesInfo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bloqueSeccion{
+        @include seccion(90%, auto, black, 1em, 'Helvetica');
+    }
+    .seccionesInfo{
+        padding: 20px;
+    }
+}

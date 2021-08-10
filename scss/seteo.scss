@@ -1,0 +1,128 @@
+/* SETEO DE LA WEB */
+
+/* TIPOGRAFÍAS */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* VARIABLES */
+$amarillo: rgb(252, 219, 0);
+$gris: rgb(16, 16, 16);
+$blanco: rgb(233, 233, 233);
+
+/* RESET */
+*{
+    font-family: 'Noto Serif', 'Helvetica';
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{
+    background: black;
+}
+header{
+    border-bottom: 2px solid white;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+header #logoWave{
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+}
+header p{
+    font: italic 12px 'Helvetica';
+}
+h1, h2, h3{
+    color: rgb(252, 219, 0);
+    margin: 20px 0;
+    font-family: 'Bebas Neue';
+    font-size: 24px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* Cambiando lo seteado por bootstrap */
+a:hover{
+    text-decoration: none;
+}
+nav ul, .noViñeta{
+    list-style: none;
+}
+ul li{
+    text-align: center;
+}
+table tr td{
+    font-family: 'Noto Serif';
+}
+input, textarea, select, option{
+    color: black;
+}
+
+/* BEM -> NAV DEL HEADER */
+.menu{
+    background-color: black;
+    .menu__lista{
+        list-style: none;
+        .menu__item{
+            display: inline-block;
+            padding: 10px 5px;
+            .menu__a{
+                font: 20px 'Bebas Neue';
+            }
+            .menu__a:hover{
+                color: $amarillo;
+                transition: 0.3s;
+            }
+        }
+        .menu__item--sub{
+            position: relative;
+            .menu__submenu{
+                position: absolute;
+                background-color: black;
+                padding-top: 18px;
+                display: none;
+                margin-left: -8px;
+                .menu__submenu__item{
+                    padding: 8px 8px;
+                }
+            }
+        }
+        .menu__item--sub:hover .menu__submenu{
+            display: block;
+        }
+    }
+}
+
+/* BEM -> FOOTER */
+.footer{
+    display: flex;
+    background-color: white;
+    padding: 15px 0;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    .footer__marcas{
+        width: 45%;
+        .footer__p{
+            display: inline-block;
+            color: black;
+            width: 100%;
+            margin: 2px 0;
+            font: 1.2em 'Bebas Neue';
+        }
+    }
+    .footer__redes{
+        width: 45%;
+        margin: 0;
+        .footer__item{
+            display: inline-block;
+        }
+        .footer__item--active:hover{
+            transform: translateY(-10px);
+            transition: 0.3s;
+        }
+    }
+}

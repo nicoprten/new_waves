@@ -1,0 +1,73 @@
+#contacto{
+    text-align: center;
+    display: inline-block;
+    width: 650px;
+    .botonera{
+        display: none;
+    }
+    form{
+        margin-top: 20px;
+        #menuFormContacto, select{
+            display: block;
+            margin: 10px auto;
+        }
+        label{
+            font: 22px 'Bebas Neue';
+            padding-right: 5px;
+        }
+        textarea{
+            width: 616px;
+            margin-top: 20px;
+        }
+        .inputContacto, #borrar{
+            font: 22px 'Bebas Neue';
+            background-color: white;
+            padding: 5px;
+        }
+        .inputContacto:hover, .inputContacto:focus, #borrar:hover{
+            background-color: rgb(16, 16, 16);
+            color: white;
+            transition: 0.3s;
+        }
+    }
+}
+#ubicacion{
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
+}
+
+/* QUERY */
+@media only screen and (max-width: 400px){
+    #contacto{
+        width: 70%;
+        margin: 10px auto;
+        .botonera{
+            display: block;
+            margin-top: 20px;
+        }
+        form{
+            display: none;
+        }
+    }
+    #ubicacion{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px){
+    #contacto{
+        width: 80%;
+        form{
+            textarea{
+                width: 50%;
+            }
+            .inputContacto{
+                display: block;
+                margin: 10px auto;
+                width: 50%;
+            }
+        } 
+    }
+}

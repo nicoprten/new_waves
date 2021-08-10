@@ -1,0 +1,180 @@
+/* .carrito funciona para mobile y tablet, #carro para monitor */
+
+/* BEM -> CARRITO -> BOTONERA CENTRADA */
+.botonera{
+    &__lista{
+        list-style: none;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        .botonera__item{
+            text-align: center;
+            width: 25%;
+            .botonera__a{
+                background-color: $blanco;
+                color: $gris;
+                font: 22px 'Bebas Neue';
+                padding: 5px 0;
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+                position: relative;
+                .botonera__icon{
+                    color: $gris;
+                    position: absolute;
+                    left: 5px;
+                    top: 7px;
+                }
+                .botonera__span{
+                    font: 22px 'Bebas Neue';
+                    color: $gris;
+                }
+            }
+            .botonera__a--hover:hover{
+                background-color: rgb(16, 16, 16);
+                color: white;
+                transition: 0.3s;
+            }
+            .botonera__a--hover:hover .botonera__icon, .botonera__a--hover:hover .botonera__span{
+                color: $blanco;
+            }
+            .botonera__p{
+                @extend .botonera__a;
+                border: 4px solid white;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+@media only screen and (max-width:400px){
+    .botonera{
+        &__lista{
+            .botonera__item{
+                width: 65%;
+            }
+        }
+    }
+}
+
+.carrito{
+    display: block;
+    border: 2px solid white;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+}
+#carro{
+    width: 600px;
+    margin: 30px auto;
+    padding: 14px;
+    background-color: white;
+    display: none;
+    tr{
+        text-align: center;
+        th{
+            color: black;
+            font: bold 20px 'Helvetica';
+            border-bottom: 2px solid black;
+            padding: 10px;
+        }
+        th:nth-child(2){
+            border-bottom: 0;
+        }
+        td{
+            font: 18px 'Bebas Neue';
+            color: black;
+            form{
+                input{
+                    font-family: 'Bebas Neue';
+                }
+                input:focus{
+                    background-color: rgb(16, 16, 16);
+                    color: white;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+#costoEnvio{
+    display: block;
+    width: 600px;
+    margin: 20px auto 0 auto;
+    input{
+        font-family: 'Bebas Neue';
+        font-size: 1.2em;
+        background-color: white;   
+        border: none;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    input:focus{
+        background-color: rgb(16, 16, 16);
+        color: white;
+        transition: 0.3s;
+    }
+    form{
+        fieldset{
+            padding: 10px;
+            border: 2px solid white;
+            legend{
+                font: 22px 'Bebas Neue';
+                padding: 0 20px;
+            }
+            .inputHover:hover{
+                background-color: rgb(16, 16, 16);
+                color: white;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+/* QUERY */
+@media only screen and (max-width: 400px){
+    #costoEnvio{
+        width: 80%;
+        border: 2px solid white;
+        padding: 10px;
+    }
+    .carrito{
+        width: 70%;
+        background-color: black;
+        border: 2px solid white;
+        margin: 20px auto;
+        &__producto{
+            color: $blanco;
+            font: bold 1.2em 'Bebas Neue';
+            margin-top: 10px;
+        }
+        &__img{
+            padding: 10px;
+            width: 80%;
+        }
+        &__cant, &__precio{
+            width: 20%;
+            background-color: black;
+            border: 2px solid white;
+            margin: 10px auto;
+            font: bold 1em 'Bebas Neue';
+        }
+    }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px){
+    #costoEnvio{
+        width: 80%;
+    }
+    .carrito{
+        img{
+            width: 60%;
+        } 
+    }
+}
+@media only screen and (min-width: 961px){
+    #carro{
+        display: block;
+    }
+    .carrito{
+        display: none;
+    }
+}

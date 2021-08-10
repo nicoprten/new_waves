@@ -1,0 +1,29 @@
+/* WEB 404 ERROR */
+.error{
+    border: 2px solid rgb(252, 219, 0);
+    padding: 10px;
+    box-sizing: border-box;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -350px 0 0 -250px;
+    &__title{
+        font-size: 2.5em;
+        margin: 10px 0;
+    }
+    &__text{
+        margin: 20px 0;
+        font-family: 'Bebas Neue';
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width: 540px){
+    .error{
+        width: 80%;
+        margin: 10% auto;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}

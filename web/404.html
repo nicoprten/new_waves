@@ -10,13 +10,11 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <header>
-    </header>
     <main>
-        <div id="error">
-            <h1>ERROR 404</h1>
-            <p>Parece que no podemos encontrar la página que estás buscando.</p>
-            <p>Acá hay algunos links para que puedas volver a navegar:</p>
+        <div class="error">
+            <h1 class="error__title">ERROR 404</h1>
+            <p class="error__text">Parece que no podemos encontrar la página que estás buscando.</p>
+            <p class="error__text">Acá hay algunos links para que puedas volver a navegar:</p>
             <nav class="menu">
                 <ul class="menu__lista">
                     <li class="menu__item"><a href="../index.html" class="menu__a">INICIO</a></li>
@@ -34,11 +32,11 @@
                     <li class="menu__item"><a href="contacto.html" class="menu__a">CONTACTO</a></li>
                 </ul>
             </nav>
-            <img src="../imagenes/logo02.jpg" alt="logo de new waves">
+            <picture>
+                <source srcset="../imagenes/logo02-240.jpg" media="(max-width: 540px)">
+                <img class="error__img" src="../imagenes/logo02.jpg" alt="logo de new waves">
+            </picture>
         </div>
-        
     </main>
-    <footer>
-    </footer>
 </body>
 </html>
